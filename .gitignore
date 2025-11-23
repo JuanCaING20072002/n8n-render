@@ -1,0 +1,22 @@
+# Dependencias y builds
+node_modules/
+dist/
+.build/
+
+# Entornos
+.env
+.env.*
+
+# Editor / SO
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker artefactos temporales
+*.tar
+
+# Otros
+coverage/
