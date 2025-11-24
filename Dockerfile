@@ -16,7 +16,7 @@ USER n8n
 WORKDIR /home/n8n
 
 ENV N8N_HOST=0.0.0.0
-ENV N8N_PORT=${PORT}
 EXPOSE 5678
 
-CMD ["n8n"]
+# Asigna N8N_PORT desde $PORT en tiempo de ejecución
+CMD ["sh", "-c", "export N8N_PORT=$PORT && n8n"]
